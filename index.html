@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meenakshi Mothe's Data Analytics Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom hover effect for project cards */
+        .project-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 text-white p-4 sticky top-0 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Meenakshi Mothe's Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:underline">About</a></li>
+                <li><a href="#projects" class="hover:underline">Projects</a></li>
+                <li><a href="#skills" class="hover:underline">Skills</a></li>
+                <li><a href="#education" class="hover:underline">Education</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-6">About Me</h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto text-center">
+                I’m a B.Tech student in Information Technology with a strong interest in data analytics. I enjoy working with data to find useful insights. My projects, like studying IMDB movie ratings and improving clothing sales, use tools like Excel, SQL, Python, and Power BI. I aim to solve real-world problems with data.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-6">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1: IMDB Movie Analysis -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">IMDB Movie Analysis</h3>
+                    <p class="text-gray-600 mb-4">
+                        Analyzed movie data to identify genre popularity, duration effects, language impact, and director success using descriptive statistics and correlation analysis.
+                    </p>
+                    <p class="text-gray-600 mb-2"><strong>Tech:</strong> Excel (COUNTIF, AVERAGE, MEDIAN, STDEV, CORREL), Excel Charts</p>
+                    <p class="text-gray-600"><strong>Insights:</strong> Drama and Comedy dominate; mid-length movies score higher; Polish films have high ratings.</p>
+                </div>
+                <!-- Project 2: Hiring Process Analytics -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Hiring Process Analytics</h3>
+                    <p class="text-gray-600 mb-4">
+                        Examined hiring trends, salary distributions, and departmental composition to inform HR strategies.
+                    </p>
+                    <p class="text-gray-600 mb-2"><strong>Tech:</strong> Excel, Pivot Tables, Pie/Bar Charts</p>
+                    <p class="text-gray-600"><strong>Insights:</strong> More males hired; average salary ~₹49,625; Operations & Service dominates.</p>
+                </div>
+                <!-- Project 3: Operation Analytics -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Operation Analytics & Metric Spike</h3>
+                    <p class="text-gray-600 mb-4">
+                        Investigated job data to identify metric spikes and trends for operational efficiency.
+                    </p>
+                    <p class="text-gray-600 mb-2"><strong>Tech:</strong> MySQL, Python (Pandas, Matplotlib, Seaborn), Jupyter Notebooks</p>
+                    <p class="text-gray-600"><strong>Insights:</strong> Identified seasonal metric spikes and efficiency opportunities.</p>
+                </div>
+                <!-- Project 4: Instagram User Analytics -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Instagram User Analytics</h3>
+                    <p class="text-gray-600 mb-4">
+                        Analyzed user engagement, inactive accounts, and popular content to enhance retention and marketing.
+                    </p>
+                    <p class="text-gray-600 mb-2"><strong>Tech:</strong> MySQL Workbench, SQL</p>
+                    <p class="text-gray-600"><strong>Insights:</strong> Identified loyal users; top hashtags like #smile; Thursday registration peaks.</p>
+                </div>
+                <!-- Project 5: Improving Clothing Sales -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Improving Clothing Sales</h3>
+                    <p class="text-gray-600 mb-4">
+                        Optimized inventory and marketing using customer and sales data analysis.
+                    </p>
+                    <p class="text-gray-600 mb-2"><strong>Tech:</strong> Excel, SQL, Python/R, Power BI/Tableau</p>
+                    <p class="text-gray-600"><strong>Insights:</strong> Jeans popular among youth; email campaigns effective for 25-34 age group.</p>
+                </div>
+                <!-- Project 6: World Alcohol Consumption -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">World Alcohol Consumption</h3>
+                    <p class="text-gray-600 mb-4">
+                        Explored global alcohol consumption patterns (1984-1989) by region, beverage type, and country.
+                    </p>
+                    <p class="text-gray-600 mb-2"><strong>Tech:</strong> Python (Pandas, Matplotlib, Seaborn), Jupyter Notebooks</p>
+                    <p class="text-gray-600"><strong>Insights:</strong> Europe leads; wine tops beverages; Luxembourg highest per capita.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-6">Skills</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Excel</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">SQL</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Python</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">R</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Power BI</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Tableau</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">MySQL</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Pandas</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Matplotlib</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Seaborn</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Problem-Solving</span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Communication</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-6">Education</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">B.Tech in Information Technology</h3>
+                    <p class="text-gray-600 mb-2">Keshav Memorial Institute of Technology, 2022-2026</p>
+                    <p class="text-gray-600">Relevant Coursework: Data Analysis, Statistics, Database Management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-6">Contact</h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto text-center mb-6">
+                Feel free to reach out for collaboration or opportunities!
+            </p>
+            <div class="max-w-md mx-auto">
+                <p class="text-gray-600 mb-4">Email: <a href="mailto:meenakshimothe5@gmail.com" class="text-blue-600 hover:underline">meenakshimothe5@gmail.com</a></p>
+                <p class="text-gray-600">GitHub: <a href="https://github.com/Meenakshimothe" class="text-blue-600 hover:underline">github.com/Meenakshimothe</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-4 text-center">
+        <p>© 2025 Meenakshi Mothe. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for basic interactivity -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
